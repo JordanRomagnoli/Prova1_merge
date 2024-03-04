@@ -19,8 +19,8 @@
         </tr>
     </thead>
     <tbody>
+        @foreach ($videogames as $videogame)
         <tr>
-            @foreach ($videogames as $videogame)
                 <th scope="row">
                     {{ $videogame->id }}
                 </th>
@@ -38,8 +38,8 @@
                         Vedi
                     </a>
                 </td>
+            </tr>
             @endforeach
-        </tr>
     </tbody>
 </table>
 
