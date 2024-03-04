@@ -6,4 +6,9 @@
 <h1>
     About | Laravel Start 1
 </h1>
+
+<h3>
+    ciao Nicola
+</h3>
+
 @endsection
