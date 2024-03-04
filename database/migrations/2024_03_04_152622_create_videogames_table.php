@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('thumb')->nullable();
             $table->unsignedFloat('price')->nullable();
+            $table->string('type', 64)->nullable();
             $table->timestamps();
         });
     }
