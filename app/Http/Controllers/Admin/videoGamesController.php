@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\videogame;
 
 
-class VideoGames extends Controller
+class videoGamesController extends Controller
 {
     /**
      * Display a listing of the resource.
