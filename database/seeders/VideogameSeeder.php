@@ -24,7 +24,6 @@ class VideogameSeeder extends Seeder
             $videogame->description = fake()->paragraph;
             $videogame->thumb = fake()->imageUrl;
             $videogame->price = fake()->randomFloat(2, 1, 60);
-            $videogame->type = fake()->word;
             $videogame->save();
         }
     }
