@@ -34,7 +34,7 @@
                     {{ $videogame->type }}
                 </td>
                 <td>
-                    <a href="#" class="btn btn-primary">
+                    <a href="{{ route('videgames.show', ['videogame' => $videgame->id]) }}" class="btn btn-primary">
                         Vedi
                     </a>
                 </td>
