@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col">
-        <a href="{{ route(videogames.index) }}">
+        <a href="{{ route('videogames.index') }}">
             Torna ai videogames
         </a>
     </div>
