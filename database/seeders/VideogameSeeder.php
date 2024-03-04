@@ -16,14 +16,14 @@ class VideogameSeeder extends Seeder
     public function run(): void
     {   
         videogame::truncate();
-        
+
         for ($i = 0; $i < 5; $i++) {
             $videogame = new videogame();
 
             $videogame->title = fake()->sentence;
             $videogame->description = fake()->paragraph;
             $videogame->thumb = fake()->imageUrl;
-            $videogame->price = fake()->randomFloat(6,2);
+            $videogame->price = fake()->randomFloat(2, 1, 60);
             $videogame->save();
         }
     }
