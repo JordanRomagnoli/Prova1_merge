@@ -5,14 +5,19 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class VideoGames extends Controller
+use App\Models\videogame;
+
+
+class videoGamesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $videogames = videogame::get();
+
+        return view("videogames.index", compact('videogames'));
     }
 
     /**
@@ -34,9 +39,9 @@ class VideoGames extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(videogame $videogame)
     {
-        //
+        return view('videogames.show', compact('videogame'));
     }
 
     /**
