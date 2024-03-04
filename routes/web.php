@@ -15,6 +15,6 @@ use App\Http\Controllers\Admin\videoGamesController;
 |
 */
 
-Route::get('/', [videoGamesController::class,'index'])->name('home');
+Route::resource('videogames', videoGamesController::class);
 
 // Route::get(PERCORSO CON CUI ARRIVARE ALLA PAGINA, FUNZIONE DI CALLBACK CHE MI CREA LA RISPOSTA DA DARE ALL UTENTE)
