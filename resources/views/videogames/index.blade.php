@@ -20,11 +20,10 @@
     </thead>
     <tbody>
         <tr>
-            <th scope="row">1</th>
             @foreach ($videgames as $videogame)
-                <td>
+                <th scope="row">
                     {{ $videogame->id }}
-                </td>
+                </th>
                 <td>
                     {{ $videogame->title }}
                 </td>
