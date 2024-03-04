@@ -20,7 +20,7 @@
     </thead>
     <tbody>
         <tr>
-            @foreach ($videgames as $videogame)
+            @foreach ($videogames as $videogame)
                 <th scope="row">
                     {{ $videogame->id }}
                 </th>
